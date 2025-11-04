@@ -40,4 +40,11 @@ fun ignoreNulls(str: String?) {
     val notNull: String = str!!
     val notNullUpper: String = notNull.toUpperCase()
     println(notNullUpper)
+
+    val email: String? = "kingsCode@abc.com"
+    //null이 아닐경우에만 실행.
+    //if(email != null) {}
+    email?.let {
+        println(email)
+    }
 }
